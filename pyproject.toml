@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ignorer"
+authors = [
+    {name = "Franklyn Vasquez", email = "franklynvasquez24@gmail.com"},
+]
+description = "Create gitignore sources from templates"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+version = "0.1.0"
+dynamic = ["dependencies"]
+
+[project.scripts]
+ignorer = "ignorer.__main__:main"

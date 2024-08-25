@@ -1,0 +1,54 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Test Offline Templates",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "ignorer",
+      "args": [
+        "a.gitignore",
+        "b",
+        "--out",
+        "tests/offline-templates.gitignore",
+        "--offline",
+        "true",
+        "--cfg_path",
+        "tests/test.cfg.json"
+      ]
+    },
+    {
+      "name": "Test Online Templates",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "ignorer",
+      "args": [
+        "Python",
+        "Global/VisualStudioCode",
+        "Global/VirtualEnv",
+        "VisualStudio",
+        "--out",
+        "tests/online-templates.gitignore",
+        "--cfg_path",
+        "tests/test.cfg.json"
+      ]
+    },
+    {
+      "name": "Show Help",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "ignorer",
+      "args": []
+    },
+    {
+      "name": "Python Debugger: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
