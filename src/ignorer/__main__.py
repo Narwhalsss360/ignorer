@@ -155,7 +155,7 @@ def ignore(*templates: str, out: Optional[str] = None, offline: bool = False, ap
 
 
 def main() -> None:
-    cmd: Command = Command.create(ignore, 'ignore', None, help='Create ignore source')
+    cmd: Command = Command.create(ignore, 'ignorer', None, help='Create ignore source')
     if len(argv) == 1:
         print(cmd.details)
     else:
